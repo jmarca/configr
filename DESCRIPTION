@@ -1,0 +1,11 @@
+Package: configr
+Title: configr: reads usernames and passwords from config.json.
+Version: 1.0.0
+Authors@R: person("James", "Marca", , "james@activimetrics.com", role = c("aut", "cre"))
+Description: configr, a utility that reads configuration data from config.json by default.
+Depends: R (>= 3.1.2)
+License: GPL-2
+LazyData: true
+Suggests: testthat
+Imports: rjson,
+    digest
