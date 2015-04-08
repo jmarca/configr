@@ -1,0 +1,24 @@
+{
+  "name": "configr",
+  "version": "0.1.0",
+  "description": "An R package for loading JSON configuration files",
+  "main": "R/configr.R",
+  "directories": {
+      "test": "tests",
+      "R": "R"
+  },
+  "scripts": {
+      "test": "RScript",
+      "install":"R"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmarca/rstats_couch_utils"
+  },
+  "keywords": [
+    "R"
+  ],
+  "author": "James E. Marca",
+  "license": "GPLv2",
+  "readmeFilename": "README.md"
+}

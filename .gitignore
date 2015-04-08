@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 *~
+/configr.Rcheck/
+/configr_1.0.0.tar.gz
+/..Rcheck/
