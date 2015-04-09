@@ -1,2 +1,4 @@
 package\.json$
 node\.modules$
+^Rtest\.R$
+^Rinstall\.R$

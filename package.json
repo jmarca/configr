@@ -8,8 +8,8 @@
       "R": "R"
   },
   "scripts": {
-      "test": "RScript",
-      "install":"R"
+      "test": "Rscript Rtest.R",
+      "install":"Rscript Rinstall.R"
   },
   "repository": {
     "type": "git",
