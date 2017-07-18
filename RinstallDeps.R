@@ -1,4 +1,8 @@
 ## need node_modules directories
+envrr <- Sys.getenv()
+print('configr RinstallDeps')
+print(paste(names(envrr)))
+
 dot_is <- getwd()
 node_paths <- dir(dot_is,pattern='\\.Rlibs',
                   full.names=TRUE,recursive=TRUE,
