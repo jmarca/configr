@@ -1,7 +1,10 @@
 dot_is <- paste(getwd(),'..',sep='/')
 
 envrr <- Sys.getenv()
-print(paste(names(envrr)))
+print(paste('npm_lifecycle_event',envrr['npm_lifecycle_event']))
+print(paste('npm_lifecycle_script',envrr['npm_lifecycle_script']))
+print(paste('PWD',envrr['PWD']))
+
 
 ## dependencies <- grep(pattern='npm_package_rDependencies'
 ##                     ,x=names(envrr),perl=TRUE,value=TRUE)

@@ -1,10 +1,10 @@
 ## need node_modules directories
 envrr <- Sys.getenv()
 print('configr RinstallDeps')
-print(paste(names(envrr)))
-print(paste('npm_lifecycle_event',envrr$npm_lifecycle_event))
-print(paste('npm_lifecycle_script',envrr$npm_lifecycle_script))
-print(paste('PWD',envrr$PWD))
+## print(paste(names(envrr)))
+print(paste('npm_lifecycle_event',envrr['npm_lifecycle_event']))
+print(paste('npm_lifecycle_script',envrr['npm_lifecycle_script']))
+print(paste('PWD',envrr['PWD']))
 dot_is <- getwd()
 print(paste('dot_is',dot_is))
 node_paths <- dir(dot_is,pattern='\\.Rlibs',
