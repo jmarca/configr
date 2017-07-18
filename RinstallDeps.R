@@ -31,5 +31,5 @@ lib_paths <- .libPaths()
 
 install.packages("roxygen2",repos="https://cloud.r-project.org")
 install.packages("devtools",repos="https://cloud.r-project.org")
-devtools::install_github("hadley/devtools")
+## devtools::install_github("hadley/devtools")
 devtools::install_deps()
