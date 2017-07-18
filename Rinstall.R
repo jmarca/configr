@@ -1,6 +1,7 @@
 dot_is <- paste(getwd(),'..',sep='/')
 
 envrr <- Sys.getenv()
+print(envrr)
 print(paste('npm_lifecycle_event',envrr['npm_lifecycle_event']))
 print(paste('npm_lifecycle_script',envrr['npm_lifecycle_script']))
 print(paste('PWD',envrr['PWD']))
