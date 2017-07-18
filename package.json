@@ -4,12 +4,13 @@
   "description": "An R package for loading JSON configuration files",
   "main": "R/configr.R",
   "directories": {
-      "test": "tests",
-      "R": "R"
+    "test": "tests",
+    "R": "R"
   },
   "scripts": {
-      "test": "Rscript Rtest.R",
-      "install":"Rscript Rinstall.R"
+    "test": "Rscript Rtest.R",
+    "preinstall": "Rscript RinstallDeps.R",
+    "install": "Rscript Rinstall.R"
   },
   "repository": {
     "type": "git",
