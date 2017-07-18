@@ -2,8 +2,11 @@
 envrr <- Sys.getenv()
 print('configr RinstallDeps')
 print(paste(names(envrr)))
-
+print(paste('npm_lifecycle_event',envrr$npm_lifecycle_event))
+print(paste('npm_lifecycle_script',envrr$npm_lifecycle_script))
+print(paste('PWD',envrr$PWD))
 dot_is <- getwd()
+print(paste('dot_is',dot_is))
 node_paths <- dir(dot_is,pattern='\\.Rlibs',
                   full.names=TRUE,recursive=TRUE,
                   ignore.case=TRUE,include.dirs=TRUE,
@@ -13,6 +16,7 @@ path <- normalizePath(paste(dot_is,'.Rlibs',sep='/')
 if(!file.exists(path)){
     dir.create(path)
 }
+print(paste('path',path))
 lib_paths <- .libPaths()
 .libPaths(c(path,node_paths,lib_paths))
 
