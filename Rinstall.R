@@ -1,3 +1,4 @@
+print('configr Rinstall.R')
 dot_is <- getwd()
 envrr <- Sys.getenv()
 
@@ -19,6 +20,9 @@ if(!file.exists(path)){
 }
 lib_paths <- .libPaths()
 .libPaths(c(path,node_paths,lib_paths))
+
+print (paste('installing to',paste(c(.libPaths()))))
+
 ## ready to go
 devtools::document()
 devtools::install()
