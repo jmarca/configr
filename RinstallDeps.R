@@ -5,7 +5,15 @@ print('configr RinstallDeps')
 print(paste('npm_lifecycle_event',envrr['npm_lifecycle_event']))
 print(paste('npm_lifecycle_script',envrr['npm_lifecycle_script']))
 print(paste('PWD',envrr['PWD']))
+## search PWD for first node_modules
+
 dot_is <- getwd()
+
+plaba <- regexpr(pattern='node_modules',envrr['PWD'])
+if(plaba>0){
+    stoppoint <- plaba + 12 ## same as  attr(plaba,'match.length')
+    dot_is <- substr(envrr['PWD'],1,stoppoint)
+}
 print(paste('dot_is',dot_is))
 node_paths <- dir(dot_is,pattern='\\.Rlibs',
                   full.names=TRUE,recursive=TRUE,
